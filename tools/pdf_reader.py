@@ -1,26 +1,32 @@
+from json import tool
+from multiprocessing import context
 from os import read
 from pypdf import PdfReader
+from .base_tool import BaseTool
 
-def read_pdf(path:str) -> str:
-    """
-    读取PDF文本
-    """
-    try:
+class PDFReaderTool(BaseTool):
+    @property
+    def name(self):
+        return "pdf_reader"
+    @property
+    def description(self):
+        return "读取PDF文件内容"
+    def run(self, path):
         reader = PdfReader(path)
+
         text = []
 
         for page in reader.pages:
-            page_text = page.extract_text()
+            content = page.extract_text()
 
-            if page_text:
-                text.append(page_text)
-
+            if content:
+                text.append(content)
         return "\n".join(text)
-    except Exception:
+            
 
-        return ""
     
 if __name__ == '__main__':
-    text = read_pdf("./2026acl.pdf")
+    tool = PDFReaderTool()
+    text = tool.run("./2026acl.pdf")
 
     print(text)

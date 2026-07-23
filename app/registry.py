@@ -1,5 +1,7 @@
-from tools.pdf_reader import read_pdf
+from tools.pdf_reader import PDFReaderTool
+
+pdf_tool = PDFReaderTool()
 
 TOOLS = {
-    "pdf_reader":read_pdf
+    pdf_tool.name: pdf_tool
 }

@@ -37,7 +37,7 @@ class ResearchAgent:
 
             tool_name, tool_input = result # 得到工具名和文件路径
 
-            observation = TOOLS[tool_name](tool_input)
+            observation = TOOLS[tool_name].run(tool_input)
 
             messages.append(
 
