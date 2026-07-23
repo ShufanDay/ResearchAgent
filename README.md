@@ -95,8 +95,6 @@ ResearchAgent
 │
 └── main.py
 ```
-
-```
 ---
 # ⚡ Quick Start
 
