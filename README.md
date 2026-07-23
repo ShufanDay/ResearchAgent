@@ -61,7 +61,7 @@ The long-term goal of this project is to build an extensible research platform t
                   │
                   ▼
                 LLM
-````
+```
 
 ---
 
@@ -188,7 +188,6 @@ ResearchAgent 是一个**从零开始实现**的科研智能体（Research Agent
 * 💻 Code Agent（规划中）
 
 ---
-
 ## 🏛 系统架构
 
 ```text
