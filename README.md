@@ -1,11 +1,11 @@
 
 <div align="center">
 
-# 🔬 ResearchAgent
+<h1>🔬 ResearchAgent</h1>
 
-### A Lightweight Research Agent Framework Built from Scratch
+<h3>A Lightweight Research Agent Framework Built from Scratch</h3>
 
-**从零开始构建的科研智能体框架**
+<p>从零开始构建的科研智能体框架</p>
 
 
 <p align="center">
@@ -15,7 +15,7 @@
   <img src="https://img.shields.io/badge/Version-v0.1.0-blue?style=for-the-badge">
 </p>
 
-English | [简体中文](#简体中文)
+English | [中文](#chinese)
 
 </div>
 
@@ -66,7 +66,6 @@ The long-term goal of this project is to build an extensible research platform t
 ---
 
 # 🚀 Features
-
 * ✅ ReAct Agent
 * ✅ Tool Calling
 * ✅ Tool Registry
@@ -79,7 +78,6 @@ The long-term goal of this project is to build an extensible research platform t
 
 ---
 # 📂 Project Structure
-
 ```text
 ResearchAgent
 │
@@ -97,6 +95,7 @@ ResearchAgent
 │
 └── main.py
 ```
+
 ```
 ---
 # ⚡ Quick Start
