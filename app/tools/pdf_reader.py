@@ -1,6 +1,3 @@
-from json import tool
-from multiprocessing import context
-from os import read
 from pypdf import PdfReader
 from .base_tool import BaseTool
 

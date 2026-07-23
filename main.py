@@ -1,4 +1,4 @@
-from app.agent import ResearchAgent
+from app.core.agent import ResearchAgent
 
 agent = ResearchAgent()
 

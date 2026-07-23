@@ -1,7 +1,10 @@
+from atexit import register
 from app.prompt import SYSTEM_PROMPT
-from app.llm import chat
-from app.parser import parse_action
-from app.registry import TOOLS
+from app.llm.llm import chat
+from app.core.parser import parse_action
+from app.tools import registry
+from app.tools.pdf_reader import PDFReaderTool
+from app.tools.registry import tool_registry
 
 class ResearchAgent:
 
@@ -37,7 +40,7 @@ class ResearchAgent:
 
             tool_name, tool_input = result # 得到工具名和文件路径
 
-            observation = TOOLS[tool_name].run(tool_input)
+            observation = tool_registry.execute(tool_name, tool_input)
 
             messages.append(
 

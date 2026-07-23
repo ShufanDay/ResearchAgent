@@ -16,3 +16,34 @@
 1. 克隆项目
 2. 安装依赖
 3. 运行主程序
+
+
+ResearchAgent
+│
+├── app
+│   ├── core                # Agent核心
+│   │     ├── agent.py
+│   │     ├── message.py
+│   │     ├── observation.py
+│   │     ├── action.py
+│   │     └── parser.py
+│   │
+│   ├── llm
+│   │     └── openai_llm.py
+│   │
+│   ├── tools
+│   │     ├── base_tool.py
+│   │     ├── registry.py
+│   │     ├── pdf_tool.py
+│   │     ├── python_tool.py
+│   │     └── ...
+│   │
+│   ├── memory
+│   │     └── ...
+│   │
+│   ├── planner
+│   │     └── ...
+│   │
+│   └── prompt
+│
+└── main.py
